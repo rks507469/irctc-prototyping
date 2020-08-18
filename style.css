@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-item {
+    font-weight: 600;
+}
+div.collapse > ul.navbar-nav > li.nav-item> a.color-black {
+    color: black;
+}
+div.collapse > ul.navbar-nav > li.nav-item> a.color-red {
+    margin-right: 10px;
+    color: #ED2939;
+}
+.hero-back {
+    height: 80vh;
+    background: url('assets/tajmahal.jpg') center/cover;
+}
+ul.nav-tabs > li.nav-item > a {
+    color: black;
+}

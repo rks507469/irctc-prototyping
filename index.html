@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>IRCTC Prototyping</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+            <img src="assets/irctc.svg" width="50" height="50" alt="" loading="lazy">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link color-black" href="#">Special Trains</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link color-black" href="#">Accommodation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link color-black" href="#">Meals</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link color-black" href="#">Loyalty</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link color-black" href="#">Service at Station</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link color-black" href="#">Alerts</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link color-black dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        English
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">English</a>
+                        <a class="dropdown-item" href="#">हिन्दी</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link color-red" href="#">My Trips</a>
+                </li>
+                <li class="nav-item">
+                    <img src="assets/user.svg" width="40" height="40" alt="" loading="lazy">
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-6">
+                <div class="container-fluid">
+                    <ul class="nav nav-tabs mt-5">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Book Ticket</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PNR Enquiry</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Train Schedule</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Track Your Train</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6 pt-5">
+                            <div class="form-group">
+                                <label for="from">From</label>
+                                <input type="text" class="form-control" id="from">
+                            </div>
+                        </div>
+                        <div class="col-6 pt-5">
+                            <div class="form-group">
+                                <label for="to">To</label>
+                                <input type="text" class="form-control" id="to">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 pt-3">
+                            <div class="form-group">
+                                <label for="date">Date</label>
+                                <input type="date" class="form-control" id="date">
+                            </div>
+                        </div>
+                        <div class="col-6 pt-3">
+                            <div class="form-group">
+                                <label for="return">Return(optional)</label>
+                                <select class="form-control" id="return">
+                                  <option>Yes</option>
+                                  <option>No</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 pt-3">
+                            <div class="form-group">
+                                <label for="person">Persons</label>
+                                <select class="form-control" id="person">
+                                  <option>Adult 1</option>
+                                  <option>Adult 2</option>
+                                  <option>Adult 3</option>
+                                  <option>Adult 4</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-6 pt-3">
+                            <div class="form-group">
+                                <label for="return">Class</label>
+                                <select class="form-control" id="return">
+                                  <option>Class 1</option>
+                                  <option>Class 2</option>
+                                  <option>Class 3</option>
+                                  <option>Sleeper</option>
+                                  <option>General</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 pt-4">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+                                <label class="form-check-label" for="exampleRadios1">
+                                  <strong>Divyang</strong> (Reserved for Physically Challenged Persons)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 pt-5">
+                            <button type="submit" class="btn btn-primary">Check Trains</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 hero-back">
+                <h1>Indian Railways</h1>
+                <h2>Welcoms You</h2>
+            </div>
+        </div>
+    </section>
+    <!-- Javascript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
