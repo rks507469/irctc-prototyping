@@ -21,3 +21,7 @@ div.collapse > ul.navbar-nav > li.nav-item> a.color-red {
 ul.nav-tabs > li.nav-item > a {
     color: black;
 }
+
+.strong-text {
+    font-weight: 600;
+}
